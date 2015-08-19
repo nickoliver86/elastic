@@ -19,5 +19,5 @@ from tutorial.views import MySearchView
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^search/?$', views.MySearchView.as_view(), name='search_view'),
+    #url(r'^search/?$', views.MySearchView.as_view(template_name='tutorial/search.html'), name='search_view'),
 ]

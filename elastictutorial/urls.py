@@ -24,5 +24,6 @@ from tutorial import views
 urlpatterns = [
     url(r'', include('tutorial.urls', namespace='tutorial')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^search/', include('haystack.urls')),
 ]
 

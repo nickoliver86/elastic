@@ -5,6 +5,11 @@
     <title></title>
 </head>
 <body>
-
+    <form action="{% url 'tutorial:search_view' %}" method="get" class="DateRangeSearchForm">
+        {% csrf_token %}
+        <label for="elasticsearchquery">SEARCH HERE:</label>
+        <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+        <input type="submit" value="Go">
+    </form>
 </body>
 </html>
